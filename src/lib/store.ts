@@ -77,7 +77,7 @@ export function createContext(
 
 			const elementObj: TimelineElementData = pre[elmId] || {
 				id: elmId,
-				topLeft: pre[elmId]?.topLeft ?? -1,
+				topLeft: pre[elmId]!.topLeft ?? -1,
 				next: null,
 				previous: null,
 				inView: isInView
